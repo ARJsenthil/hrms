@@ -1,7 +1,0 @@
-const BaseUrl = '/api/v1/';
-
-module.exports = function(app) {
-    app.use(BaseUrl+"faqs", require('../controllers/admin/faq'));
-    app.use(BaseUrl+"common", require('../controllers/admin/common'));
-    app.use(BaseUrl+"documents", require('../controllers/admin/document'));
-}
